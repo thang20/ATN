@@ -10,17 +10,20 @@
     <style>
         .errorText {
             color: red;
-            text-align: center;
+            
         }
         .form-group {
-           text-align: center;
-            }
+           
+        margin-left: auto;
+        margin-right: auto;
+
+        }
     </style>
     <title>Document</title>
 </head>
-<body>
-    <h1>Add product</h1>
-    <div class="form-group" style="margin-left: 60px;width:100%">
+<body background = "../anh/anhnen.jpg">
+    <h1 align="center">Add product</h1>
+    <div class="form-group" style="width:100%;", align="center">
             <form action="/doAddProduct" method="post">
             <table>
             <tr>
@@ -38,6 +41,7 @@
                 <td>Category</td>
                 <td><input class="form-control" type="text" name="category" value="{{oldValues.category}}"></td>
             </tr>
+            
             <tr align="right">
                 <td colspan="2"><input class="btn btn-primary" type="submit" value="Add Product"/></td>          
             </tr>
