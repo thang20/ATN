@@ -28,7 +28,9 @@
             <table>
             <tr>
                 <td>Name</td>
-                <td><input class="form-control" type="text" name="name" value="{{oldValues.name}}"></td>
+                <td><input class="form-control" type="text" name="name" pattern="[A-Za-z]" value="{{oldValues.name}}"></td>
+                {{!-- <td><input type="text" name="name" value="{{oldValues.name} pattern="[A-Za-z]" title="Name"></td> --}}
+                
             </tr>
             <tr>
                 <td>Price</td>

@@ -38,6 +38,7 @@ app.post('/doAddProduct',async function(req,res){
         name : req.body.name,
         price : req.body.price,
         category : req.body.category,
+        
 
     };
     let client= await MongoClient.connect(url);
